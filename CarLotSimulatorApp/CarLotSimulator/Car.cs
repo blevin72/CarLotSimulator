@@ -5,6 +5,7 @@ namespace CarLotSimulator
 	{
 		public Car()
 		{
+			CarLot.numberOfCars++;
 		}
 
 	public Car(int year, string make, string model, string engineNoise, string honkNoise, string isDriveable)
@@ -15,7 +16,10 @@ namespace CarLotSimulator
             EngineNoise = engineNoise;
             HonkNoise = honkNoise;
 			IsDriveable = isDriveable;
+
+            CarLot.numberOfCars++;
         }
+
         //Car shall have the following properties: Year, Make, Model, EngineNoise, HonkNoise, IsDriveable
         //Car shall have the following methods: MakeEngineNoise(), MakeHonkNoise()
         //The methods should take one string parameter: the respective noise property

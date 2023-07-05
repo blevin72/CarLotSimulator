@@ -17,22 +17,22 @@ namespace CarLotSimulator
             car1.Year = 1993;
             car1.Make = "Honda";
             car1.Model = "Civic";
-            car1.EngineNoise = "Soft";
-            car1.HonkNoise = "Noraml";
+            car1.EngineNoise = "loud";
+            car1.HonkNoise = "average";
             car1.IsDriveable = "Yes";
 
             car2.Year = 2005;
             car2.Make = "Toyota";
             car2.Model = "Tundra";
-            car2.EngineNoise = "Loud";
-            car2.HonkNoise = "Loud";
+            car2.EngineNoise = "loud";
+            car2.HonkNoise = "loud";
             car2.IsDriveable = "Yes";
 
             car3.Year = 1995;
             car3.Make = "Buick";
             car3.Model = "Lesabre";
-            car3.EngineNoise = "Average";
-            car3.HonkNoise = "Squeaky";
+            car3.EngineNoise = "average";
+            car3.HonkNoise = "squeaky";
             car3.IsDriveable = "No";
 
             //Call each of the methods for each car
@@ -52,8 +52,8 @@ namespace CarLotSimulator
                 car1.Year = 1993;
                 car1.Make = "Honda";
                 car1.Model = "Civic";
-                car1.EngineNoise = "Soft";
-                car1.HonkNoise = "Normal";
+                car1.EngineNoise = "soft";
+                car1.HonkNoise = "average";
                 car1.IsDriveable = "Yes";
 
                 //Object Initializer Syntax
@@ -62,20 +62,22 @@ namespace CarLotSimulator
                  Year = 2005,
                  Make = "Toyota",
                  Model = "Tundra",
-                 EngineNoise = "Loud",
-                 HonkNoise = "Loud",
+                 EngineNoise = "loud",
+                 HonkNoise = "loud",
                  IsDriveable = "Yes",
 
                 };
 
             //Custom Constructor
             Car car5 = new Car(2019, "Ford", "Explorer", "Loud", "Normal", "No");
-                //*************BONUS X 2*************//
+            //*************BONUS X 2*************//
 
-                //Create a CarLot class
-                //It should have at least one property: a List of cars
-                //Instanciate the a Carlot at the beginning of the program and as you create a car add the car to the list.
-                //At the end iterate through the list printing each of car's Year, Make, and Model to the console
+            //Create a CarLot class
+            //It should have at least one property: a List of cars
+            //Instanciate the a Carlot at the beginning of the program and as you create a car add the car to the list.
+            //At the end iterate through the list printing each of car's Year, Make, and Model to the console
+
+            Console.WriteLine(CarLot.numberOfCars);
         }
     }
 }
